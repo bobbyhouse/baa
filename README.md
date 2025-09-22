@@ -12,7 +12,7 @@ Single line
 
 Multiple lines
 ```
-awk '{print $0 | "./build/baa healthy not-healthy" }' food.txt
+awk '{print $0 | "baa healthy not-healthy" }' food.txt
 Ice Cream:not-healthy
 salad:healthy
 hamburger:not-healthy
@@ -31,6 +31,6 @@ Non-English
 
 Unicode
 ```
->> echo "🍕" | ./build/baa healthy not-healthy
+>> echo "🍕" | baa healthy not-healthy
 🍕:not-healthy
 ```
